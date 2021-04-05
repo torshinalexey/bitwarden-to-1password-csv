@@ -1,0 +1,2 @@
+folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
+social,,login,Example,example note,,https://example.com,examplename,examplepassword,
