@@ -6,11 +6,11 @@ import (
 )
 
 func TestConvert(t *testing.T) {
-	in := strings.NewReader(`folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
-social,,login,Example,sample note,,https://example.com,examplename,examplepassword,
+	in := strings.NewReader(`folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_password,login_totp
+,,login,Example name,example note,,0,https://example.com,example_login,example_password,
 `)
 	expected := `title,website,username,password,notes
-Example,example.com,examplename,examplepassword,sample note
+Example name,example.com,example_login,example_password,example note
 `
 	out := strings.Builder{}
 	convert(in, &out)

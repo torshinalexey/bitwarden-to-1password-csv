@@ -47,9 +47,9 @@ func convert(in io.Reader, out io.Writer) {
 		handleFatalErr(err)
 		for _, val := range record {
 			if val == "login" {
-				seerviceURL, err := url.Parse(record[6])
+				seerviceURL, err := url.Parse(record[7])
 				handleErr(err)
-				w.Write([]string{record[3], seerviceURL.Host, record[7], record[8], record[4]})
+				w.Write([]string{record[3], seerviceURL.Host, record[8], record[9], record[4]})
 				handleFatalErr(w.Error())
 			}
 		}

@@ -1,2 +1,2 @@
-folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
-social,,login,Example,example note,,https://example.com,examplename,examplepassword,
+folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_password,login_totp
+,,login,Example name,example note,,0,https://example.com,example_login,example_password,
