@@ -1,3 +1,7 @@
+<mark style="background-color: lightcoral; color: white; font-size: 1.3rem">This utility is no longer maintained because 1Password can import Bitwarden's csv directly.</mark>
+
+https://support.1password.com/import-1password-com/
+
 # Bitwarden to 1Password csv converter
 
 This cli tool helps to convert exported logins from [Bitwarden](https://bitwarden.com) to [1Password](https://1password.com) compatible csv format.
